@@ -1,0 +1,46 @@
+<%- include('../includes/header.html')  %> 
+<%- include('../includes/preloader.html')  %> 
+<div class="page-wrapper">
+    <%- include('../components/header2.html')  %> 
+
+        <!--Donations Page Start-->
+        <section class="donations-page">
+            <div class="container">
+                <div class="row">
+                    <% if (causes && causes.length > 0) { %>
+                        <% causes.forEach(cause => { %>
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <!--Cause One Single-->
+                                <div class="causes-one__single">
+                                    <div class="causes-one__img">
+                                        <img src="/<%= cause.image %>" alt="<%= cause.title %>">
+                                        <div class="causes-one__category ml-auto">
+                                            <!-- <span>edit</span> -->
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="causes-one__content-box">
+                                        <div class="causes-one__content">
+                                            <h3 class="causes-one__title">
+                                                <a href="#"><%= cause.title %></a>
+                                            </h3>
+                                            <p class="causes-one__text"><%= cause.description %></p>
+                                            <a href="/admin/update-cause/<%= cause._id %>" class="edit__btn">Edit</a>
+                                            <form action="/admin/delete-cause/<%= cause._id %>" method="post">
+                                                <button type="submit" class="close__btn">Delete</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <% }) %>
+                    <% } %>
+                </div>
+            </div>
+        </section>
+        <!--Donations Page End-->
+
+
+        <%- include('../components/footer.html')  %> 
+    </div>
+<%- include('../includes/footer.html')  %> 

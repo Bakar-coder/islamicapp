@@ -1,0 +1,137 @@
+<section class="causes-one causes-two">
+    <div class="container">
+        <div class="section-title text-left">
+            <span class="section-title__tagline">Help the people</span>
+            <h2 class="section-title__title">Popular Causes</h2>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="causes-one__carousel owl-theme owl-carousel">
+                    <% if (causes && causes.length > 0) { %>
+                        <% causes.forEach(cause => { %>
+                            <div class="causes-one__single">
+                                <div class="causes-one__img">
+                                    <img src="<%= cause.image %>" alt="<%= cause.title %>">
+                                    <div class="causes-one__category">
+                                        <!-- <span> </span> -->
+                                    </div>
+                                </div>
+                                <div class="causes-one__content-box">
+                                    <div class="causes-one__content">
+                                        <h3 class="causes-one__title">
+                                            <a href="give-them-education"><%= cause.title %></a>
+                                        </h3>
+                                        <p class="causes-one__text"><%= cause.description %></p>
+                                        <a href="donate-now" class="donate-btn footer-donate__btn"> <i class="fa fa-heart"></i>
+                                            Donate Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        <% }) %>
+                    <% } %>
+                    <!--Cause One Single-->
+                    <div class="causes-one__single">
+                        <div class="causes-one__img">
+                            <img src="/assets/images/causes/2.jpg" alt="">
+                            <div class="causes-one__category">
+                                <span>Clean Water</span>
+                            </div>
+                        </div>
+                        <div class="causes-one__content-box">
+                            <div class="causes-one__content">
+                                <h3 class="causes-one__title">
+                                    <a href="give-them-education">Water Well Repair and Construction</a>
+                                </h3>
+                                <p class="causes-one__text">We construct and repair water wells in areas that don't get or have clean water for drinking and using for domestic use. .</p>
+                                <a href="donate-now" class="donate-btn footer-donate__btn"> <i class="fa fa-heart"></i>
+                                    Donate Now</a>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <!--Cause One Single-->
+                    <div class="causes-one__single causes-one__single-2">
+                        <div class="causes-one__img">
+                            <img src="/assets/images/causes/1.jpg" alt="">
+                            <div class="causes-one__category">
+                                <span>Food</span>
+                            </div>
+                        </div>
+                        <div class="causes-one__content-box">
+                            <div class="causes-one__content">
+                                <h3 class="causes-one__title">
+                                    <a href="start-a-fundraising">Feeding Orphanes in Uganda</a>
+                                </h3>
+                                <p class="causes-one__text">Feeding orphanes iis one of the main project done here in Uganda, We feed the poor widows and orphanes that aren't able to feed themselves.</p>
+                                <a href="donate-now" class="donate-btn footer-donate__btn"> <i class="fa fa-heart"></i>
+                                    Donate Now</a>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <!--Cause One Single-->
+                    <div class="causes-one__single causes-one__single-3">
+                        <div class="causes-one__img">
+                            <img src="/assets/images/causes/03.jpg" alt="">
+                            <div class="causes-one__category">
+                                <span>Mosque</span>
+                            </div>
+                        </div>
+                        <div class="causes-one__content-box">
+                            <div class="causes-one__content">
+                                <h3 class="causes-one__title">
+                                    <a href="clean-pure-water">Masjid Construction</a>
+                                </h3>
+                                <p class="causes-one__text">For the love we have for Islamic religion, we construct Masjids in area they are not constructed to promote the morals of Islamic.</p>
+                                <a href="donate-now" class="donate-btn footer-donate__btn"> <i class="fa fa-heart"></i>
+                                    Donate Now</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--Cause One Single-->
+                    <div class="causes-one__single">
+                        <div class="causes-one__img">
+                            <img src="/assets/images/causes/11.jpg" alt="">
+                            <div class="causes-one__category">
+                                <span>Safe Water</span>
+                            </div>
+                        </div>
+                        <div class="causes-one__content-box">
+                            <div class="causes-one__content">
+                                <h3 class="causes-one__title">
+                                    <a href="give-them-education">Borehole Construction In Uganda</a>
+                                </h3>
+                                <p class="causes-one__text">We repair spoilt bore hole in parts of Uganda where they are not constructed, to provide them with water for their domestic use .</p>
+                                <a href="donate-now" class="donate-btn footer-donate__btn"> <i class="fa fa-heart"></i>
+                                    Donate Now</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--Cause One Single-->
+                    <div class="causes-one__single causes-one__single-2">
+                        <div class="causes-one__img">
+                            <img src="/assets/images/causes/8.jpg" alt="">
+                            <div class="causes-one__category">
+                                <span>Child Care</span>
+                            </div>
+                        </div>
+                        <div class="causes-one__content-box">
+                            <div class="causes-one__content">
+                                <h3 class="causes-one__title">
+                                    <a href="start-a-fundraising">Orphane Caring In Uganda</a>
+                                </h3>
+                                <p class="causes-one__text">We provide care for the orphanes like distributing them with clothes to where, as children we need them to be happy and feel loved in the communities.</p>
+                                <a href="donate-now" class="donate-btn footer-donate__btn"> <i class="fa fa-heart"></i>
+                                    Donate Now</a>
+                            </div>
+                          
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

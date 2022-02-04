@@ -1,0 +1,53 @@
+<%- include('includes/header.html')  %> 
+<%- include('includes/preloader.html')  %> 
+<div class="page-wrapper">
+    <%- include('components/header2.html')  %> 
+
+		<!--Contact Page Start-->
+		<section class="contact-page">
+			<div class="container">
+				<div class="row">
+					<div class="section-title text-center">
+						<span class="section-title__tagline">Find the wellbeing</span>
+						<h2 class="section-title__title">Login to account</h2>
+					</div>
+					<div class="col-xl-12">
+						<form action="/login"
+							method="post"
+							class=" comment-one__form contact-form-validated comment-one__login-form">
+							<div class="row">
+								<div class="col-xl-12">
+									<div class="comment-form__input-box">
+										<input type="text" placeholder="Username or Email Address" name="usernameOrEmail" value="<%= values && values.usernameOrEmail ? values.usernameOrEmail: '' %>" required>
+									</div>
+								</div>
+								<div class="col-xl-12">
+									<div class="comment-form__input-box">
+										<input type="password" placeholder="Enter Password" name="password" value="<%= values && values.password ? values.password: '' %>" required>
+									</div>
+								</div>
+
+								<div class="col-xl-12">
+									<div class="comment-form__input-box">
+										<a href="/register" class="mx-auto">Not Registered Yet? Signup Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xl-12">
+									<div class="comment-form__btn-box text-center">
+										<button type="submit" class="thm-btn comment-form__btn">Login now</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Contact Page End-->
+
+
+        <%- include('components/footer.html')  %> 
+    </div>
+    <%- include('includes/footer.html')  %> 

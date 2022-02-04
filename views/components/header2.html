@@ -1,0 +1,109 @@
+
+ 
+        <header class="main-header clearfix">
+            <div class="main-header__top">
+                <div class="main-header__top-left">
+                    <p class="main-header__top-text">Welcome to African Islamic Charity Organization</p>
+                    <div class="main-header__top-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="main-header__top-right">
+                    <ul class="list-unstyled main-header__top-address">
+                        <li>
+                            <div class="icon">
+                                <span class="icon-pin"></span>
+                            </div>
+                            <div class="text">
+                                <p>Mbale, Uganda</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-email"></span>
+                            </div>
+                            <div class="text">
+                                <p><a href="mailto:support@africanislamiccharity.com">support@africanislamiccharity.com</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="main-menu clearfix">
+                <div class="main-menu-wrapper clearfix">
+                    <div class="main-menu-wrapper__left">
+                        <div class="main-menu-wrapper__logo">
+                            <a href="/"><img src="assets/images/resources/logo.png" alt=""></a>
+                        </div>
+                        <div class="main-menu-wrapper__call">
+                            <div class="main-menu-wrapper__call-icon">
+                                <span class="icon-call"></span>
+                            </div>
+                            <div class="main-menu-wrapper__call-number">
+                                <p>Call Anytime</p>
+                                <h5><a href="tel:13073330079">+ 256 760 560 633</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-menu-wrapper__main-menu">
+                        <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                        <ul class="main-menu__list">
+                            <li class="dropdown">
+                                <a href="/">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Pages</a>
+                                <ul>
+                                    <li><a href="about">About</a></li>
+                                    <!-- <li class="dropdown">
+                                        <a href="volunteers">Volunteers</a>
+                                    </li>
+                                    <li><a href="become-volunteer">Become A Volunteer</a></li> -->
+                                   
+                                    <li class="dropdown">
+                                        <a href="gallery">Gallery</a>
+                                    </li>
+                                    <li><a href="login">Login</a></li>
+                                    <li><a href="register">Register</a></li>
+                                    <% if (user && user.admin) { %>
+                                        <li><a href="admin/causes">Admin Causes</a></li>
+                                        <li><a href="admin/add-cause">Add Cause</a></li>
+                                    <% } %>
+                                  
+                                    
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Donations</a>
+                                <ul>
+                                    <li class="dropdown">
+                                        <a href="donations">Donations</a>
+                                    </li>
+                                    <li><a href="donate-now">Donate Now</a></li>
+                                    
+                                </ul>
+                            </li>
+                           
+                            <li><a href="contact">Contact</a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp"></i> +256760560633</a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp"></i> +256726259251</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-menu-wrapper__right">
+                        <div class="main-menu-wrapper__search-cat">
+                            <!-- <a href="#" class="main-menu-wrapper__search search-toggler icon-magnifying-glass"></a> -->
+                            <a href="login" class="main-menu-wrapper__cart icon-avatar mini-cart__toggler"></a>
+                        </div>
+                        <a href="donate-now" class="donate-btn main-menu-wrapper__btn"> <i class="fa fa-heart"></i>
+                            Donate Now</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="stricky-header stricked-menu main-menu">
+            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+        </div><!-- /.stricky-header -->
+
+        <%- include("page-header.html")  %> 

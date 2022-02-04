@@ -1,0 +1,53 @@
+<%- include('../includes/header.html')  %> 
+<%- include('../includes/preloader.html')  %> 
+<div class="page-wrapper">
+    <%- include('../components/header2.html')  %> 
+
+    <section class="contact-page">
+
+    <div class="container">
+        <form action="/admin/update-cause/<%= cause._id %>" method="post" class="comment-one__form contact-form-validated" enctype="multipart/form-data" novalidate="novalidate">
+            <div class="row">
+                
+                <div class="col-xl-6">
+                    <div class="comment-form__input-box">
+                        <input type="text" placeholder="Cause Title" name="title" value="<%= cause.title %>" required>
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="comment-form__input-box">
+                        <input type="text" placeholder="Total Amount Required - Optional" name="totalAmount" value="<%= cause.totalAmount  %>">
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="comment-form__input-box">
+                        <input type="text" placeholder="Raised Amount - Optional" name="raisedAmount" value="<%= cause.raisedAmount %>">
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="comment-form__input-box">
+                        <input type="file" placeholder="Upload" name="image" required>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="comment-form__input-box text-message-box">
+                        <textarea name="description" placeholder="Write cause details" required><%= cause.description %></textarea>
+                    </div>
+                    <div class="comment-form__btn-box">
+                        <button type="submit" class="thm-btn comment-form__btn">Update Cause</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<%- include('../components/footer.html')  %> 
+</div>
+<%- include('../includes/footer.html')  %> 

@@ -1,0 +1,7 @@
+node_modules
+static
+temp
+*.log
+.env
+.env*
+.vercel

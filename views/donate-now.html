@@ -1,0 +1,185 @@
+<%- include('includes/header.html')  %> 
+<%- include('includes/preloader.html')  %> 
+<div class="page-wrapper">
+    <%- include('components/header2.html')  %> 
+
+        <!--Donate Now Start-->
+        <section class="donate-now">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="donate-now__left">
+                            <div class="donate-now__enter-donation">
+                                <h3 class="donate-now__title">Enter Your Donation</h3>
+                                <div class="donate-now__enter-donation-input">
+                                    <select class="selectpicker">
+                                        <option>$</option>
+                                        <option>₤</option>
+                                        <option>¥</option>
+                                    </select>
+                                    <input type="text" name="donation-money" value=".00">
+                                </div>
+                            </div>
+                            <div class="donate-now__personal-info-box">
+                                <h3 class="donate-now__title">Personal Info</h3>
+                                <form class="donate-now__personal-info-form">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="donate-now__personal-info-input">
+                                                <input type="text" placeholder="First Name" name="name">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="donate-now__personal-info-input">
+                                                <input type="text" placeholder="Last Name" name="last-name">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="donate-now__personal-info-input">
+                                                <input type="email" placeholder="Email Address" name="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="donate-now__personal-info-input">
+                                                <input type="text" placeholder="Phone Number" name="phone">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="donate-now__personal-info-input">
+                                                <input type="text" placeholder="Address" name="Address">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="donate-now__personal-info-input">
+                                                <select class="selectpicker" aria-label="Default select example">
+                                                    <option selected>Country</option>
+                                                    <% countries.forEach(country => { %>
+                                                        <option value="<%= country %>"><%= country %> </option>
+                                                    <% }) %>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div
+                                                class="donate-now__personal-info-input donate-now__personal-info-message-box">
+                                                <textarea name="message" placeholder="Write a Comment"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="donate-now__payment-info">
+                                <h3 class="donate-now__title">Payment Info</h3>
+                                <form class="donate-now__payment-info-form">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="donate-now__payment-info-input">
+                                                <input type="text" placeholder="Card Number" name="number">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="donate-now__payment-info-input">
+                                                <input type="text" placeholder="MM / YY" name="date" id="datepicker">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="donate-now__payment-info-input">
+                                                <input type="text" placeholder="Card Code ( CVC )" name="code">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="donate-now__payment-info-input">
+                                                <input type="text" placeholder="Billing Address" name="Billing">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="donate-now__payment-info-input">
+                                                <input type="text" placeholder="City" name="City">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="donate-now__payment-info-input">
+                                                <select class="selectpicker" aria-label="Default select example">
+                                                    <option selected>Country</option>
+                                                    <% countries.forEach(country => { %>
+                                                        <option value="<%= country %>"><%= country %> </option>
+                                                    <% }) %>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="donate-now__payment-info-btn-box">
+                                        <button type="submit" class="thm-btn donate-now__payment-info-btn">Donate
+                                            now</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="donate-now__right">
+                            <div class="donate-now__causes">
+                                <div class="donate-now__causes-img">
+                                    <img src="/assets/images/causes/1.jpg" alt="">
+                                </div>
+                                <div class="donate-now__causes-content-box">
+                                    <div class="donate-now__causes-content">
+                                        <h3 class="donate-now__causes-title">
+                                            <a href="404-2.html">Raise Fund for Clean &
+                                                Healthy Food</a>
+                                        </h3>
+                                        <p class="donate-now__causes-text">Feeding orphanes iis one of the main project done here in Uganda, We feed the poor widows and orphanes that aren't able to feed themselves.</p>
+                                    </div>
+                                    <!-- <div class="donate-now__progress">
+                                        <div class="bar">
+                                            <div class="bar-inner count-bar" data-percent="36%">
+                                                <div class="count-text">36%</div>
+                                            </div>
+                                        </div>
+                                        <div class="donate-now__goals">
+                                            <p><span>$25,270</span> Raised</p>
+                                            <p><span>$30,000</span> Goal</p>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!-- <div class="donation-details__organizer">
+                                <div class="donation-details__organizer-img">
+                                    <img src="assets/images/resources/donation-details-organizer-img.jpg" alt="">
+                                </div>
+                                <div class="donation-details__organizer-content">
+                                    <p class="donation-details__organizer-date">Created 20 Oct, 2021</p>
+                                    <p class="donation-details__organizer-title">Organizer:</p>
+                                    <p class="donation-details__organizer-name">Jessica Smith</p>
+                                    <ul class="list-unstyled donation-details__organizer-list">
+                                        <li>
+                                            <div class="icon">
+                                                <span class="fas fa-tag"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p>Education</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <span class="fas fa-map-marker-alt"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p>Westwood, Canada</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Donate Now End-->
+
+        <%- include('components/footer.html')  %> 
+    </div>
+<%- include('includes/footer.html')  %> 

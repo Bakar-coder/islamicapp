@@ -1,0 +1,39 @@
+{
+  "name": "aico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engine": {
+    "node": "16.13.0"
+  },
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.0",
+    "argon2": "^0.28.3",
+    "braintree": "^3.8.0",
+    "compression": "^1.7.4",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^3.1.1",
+    "cors": "^2.8.5",
+    "dotenv-safe": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-fileupload": "^1.2.1",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.17.2",
+    "gravatar": "^1.8.2",
+    "helmet": "^5.0.1",
+    "joi": "^17.5.0",
+    "joi-objectid": "^4.0.2",
+    "joi-password-complexity": "^5.1.0",
+    "mongoose": "^6.1.7",
+    "morgan": "^1.10.0",
+    "winston": "^3.4.0"
+  }
+}
